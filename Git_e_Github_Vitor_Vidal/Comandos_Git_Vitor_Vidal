@@ -1,0 +1,46 @@
+GIT LOG, valida todos os commits que foram realizados, com seus respectivos codigos para voltar.
+
+
+//replace caso deslogue da conta
+git config --global --replace-all user.name SeuNome
+git config --global --replace-all user.email SeuEmail
+
+
+//adicionar pasta no git
+git remote add origin https://github.com/vitorrvidal/Mochila_Vitor_Vidal
+
+//corrigir url enviada errada
+git remote set-url origin https://github.com/vitorrvidal/Mochila_Vitor_Vidal
+
+//enviar o commit para o git
+git push origin <master ou origin>
+
+//clonar
+git clone <link>
+
+//atualizar com base no git quando nao der pra alterar por alguem ter já alterado
+git pull origin <master ou main>
+
+irá mostrar as atualizaçã, devo alterar com base no necessario, e atualizar, realizar add e commit
+
+
+//criando uma branch (versao aonde será salvo uma copia antes de enviar para o master)
+git branch novocadastro
+Nesse momento, ele irá criar um novo branch, com todos os itens da raiz <master ou origin>
+
+//git checkout novacadastro
+irá entrar no branch novocadastro, sem alterar no master
+add e commit
+
+//juntar o branch para o master
+git checkout master
+git merge <branch rascunho>
+
+//valida se a branch ta criada
+git branch -a
+
+//apagar branch local
+git branch -d  branch_name
+
+//apagar branch remota
+git push origin --delete branch_name
